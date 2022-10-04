@@ -1,0 +1,23 @@
+.bn-set {
+    background-color: #B26AE6 !important;
+    font-weight: bold !important;
+}
+
+.cursor {
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.text-decorator-none {
+    text-decoration: none;
+}
+
+.logout {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    width: 64px;
+    height: 60px;
+}
