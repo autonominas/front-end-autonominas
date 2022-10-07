@@ -22,7 +22,11 @@
     "react-dom": "^17",
     "react-router-dom": "6",
     "react-scripts": "5.0.1",
+<<<<<<< HEAD
     "react-use-localstorage": "^3.5.3",
+=======
+    "react-use-localstorage": "3.5.3",
+>>>>>>> 599ba8267fd17513c83c12427bc3a24f966fdafb
     "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
