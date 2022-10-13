@@ -110,10 +110,10 @@ function CadastroTema() {
         <TextField
           value={tema.tipo}
           onChange={(event: ChangeEvent<HTMLInputElement>) => atualizarTema(event)}
-          id="descricao"
+          id="tipo"
           label="Descrição"
           variant="outlined"
-          name="descricao"
+          name="tipo"
           margin="normal"
           fullWidth
         />
