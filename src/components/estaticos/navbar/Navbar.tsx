@@ -1,54 +1,92 @@
-import { AppBar, Toolbar, Box, Typography, Grid } from '@mui/material';
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css'
+import Menu from "@material-ui/core/Menu";
+import React from "react";
+import MenuIcon from "@material-ui/icons/Menu";
+import { AppBar, Toolbar, IconButton, Typography, Button } from "@material-ui/core";
+import { Box } from '@mui/material';
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import './Navbar.css';
+import { color } from "@mui/system";
+import { useDispatch, useSelector } from "react-redux";
+import { TokenState } from "../../../store/tokens/tokensReducer";
+import { addToken } from "../../../store/tokens/actions";
+import { toast } from "react-toastify";
 
 function Navbar() {
-    return (
-        <>
-            <AppBar position="static" className="bn-set">
-                <Toolbar variant="dense"> <img src="https://i.imgur.com/rPm4OJQ.png" alt="logo" className="logo" />
-                    <Grid container justifyContent="center">
-                        <Box display="flex" justifyContent="space-around">
-                            <Box mx={1} className="cursor">
-                                <Typography variant="h6" color="inherit">
-                                    Home
-                                </Typography>
-                            </Box>
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+    let navigate = useNavigate();
+    const dispatch = useDispatch();
 
-                            <Box mx={1} className="cursor">
-                                <Typography variant="h6" color="inherit">
-                                    Postagens
-                                </Typography>
-                            </Box>
+    function goLogout() {
+        dispatch(addToken(""));
+        toast.info("Usuário deslogado", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
+        navigate('/login')
+    }
 
-                            <Box mx={1} className="cursor">
-                                <Typography variant="h6" color="inherit">
-                                    Temas
-                                </Typography>
-                            </Box>
+    var navbarComponent;
 
-                            <Box mx={1} className="cursor">
-                                <Typography variant="h6" color="inherit">
-                                    Cadastrar Temas
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Grid>
-                    <Box display="flex" justifyContent="end">
-                        <Typography variant="h6" color="inherit">
-                            Dark Mode
-                        </Typography>
-                    </Box>
-                    <Link to='/login' className='logout'>
-                        <Box mx={1} className="cursor">
+    if (token !== "") {
+        navbarComponent = <AppBar position="static" style={{ backgroundColor: '#0a0124' }}>
+            <Toolbar variant="dense">
+                <Box className="cursor">
+                    <Typography variant="h5" color="inherit">
+                        Autonominas
+                    </Typography>
+                </Box>
+
+                <Box display="flex" justifyContent="start">
+                    <Link to="/home" className="text-decorator-none">
+                        <Box mx={2} className="cursor">
                             <Typography variant="h6" color="inherit">
-                                Logout
+                                Home
                             </Typography>
                         </Box>
                     </Link>
-                </Toolbar>
-            </AppBar>
+                    <Link to="/posts" className="text-decorator-none">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" color="inherit">
+                                Postagens
+                            </Typography>
+                        </Box>
+                    </Link>
+                    <Link to="/temas" className="text-decorator-none">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" color="inherit">
+                                Temas
+                            </Typography>
+                        </Box>
+                    </Link>
+                    <Link to="/formulariotema" className="text-decorator-none">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" color="inherit">
+                                Cadastrar Tema
+                            </Typography>
+                        </Box>
+                    </Link>
+
+                    <Box mx={1} className="cursor" onClick={goLogout}>
+                        <Typography variant="h6" color="inherit">
+                            Logout
+                        </Typography>
+                    </Box>
+                </Box>
+            </Toolbar>
+        </AppBar>
+    }
+    return (
+        <>
+            {navbarComponent}
         </>
     );
 }
