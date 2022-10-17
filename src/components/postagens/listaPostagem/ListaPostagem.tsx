@@ -62,7 +62,7 @@ function ListaPostagem() {
                   {post.titulo}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.texto}
+                  {post.conteudo}
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.tema?.tipo}
