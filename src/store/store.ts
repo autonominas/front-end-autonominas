@@ -3,4 +3,4 @@ import { tokenReducer } from "./tokens/tokensReducer";
 
 const store = createStore(tokenReducer)
 
-export default store;
+export default store
