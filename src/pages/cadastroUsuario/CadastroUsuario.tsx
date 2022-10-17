@@ -77,10 +77,9 @@ function CadastroUsuario() {
     }
 
     return (
-        <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-            <Grid item xs={6} className="imagem2"></Grid>
+        <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa imagem2'>
             <Grid item xs={6} alignItems="center">
-                <Box paddingX={10}>
+                <Box className="containerForm" paddingX={10}>
                     <form onSubmit={onSubmit}>
                         <Typography
                             variant="h3"
@@ -132,11 +131,11 @@ function CadastroUsuario() {
                         />
                         <Box marginTop={2} textAlign="center">
                             <Link to="/login" className="text-decorator-none">
-                                <Button variant="contained" color="secondary" className="btnCancelar">
+                                <Button variant="contained" className="btnCancelar butDel">
                                     Cancelar
                                 </Button>
                             </Link>
-                            <Button type="submit" variant="contained" color="primary">
+                            <Button type="submit" variant="contained" className="butlogar">
                                 Cadastrar
                             </Button>
                         </Box>

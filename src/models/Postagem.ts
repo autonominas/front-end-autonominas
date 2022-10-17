@@ -4,7 +4,7 @@ interface Postagem {
     usuario: any;
     id: number;
     titulo: string;
-    texto: string;
+    conteudo: string;
     tema?: Tema | null;
 }
 

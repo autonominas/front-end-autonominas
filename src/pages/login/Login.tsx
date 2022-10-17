@@ -65,9 +65,9 @@ function Login() {
   }
 
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
+    <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa imagem'>
       <Grid alignItems="center" xs={6}>
-        <Box paddingX={20}>
+        <Box paddingX={20} className="containerForm" >
           <form onSubmit={onSubmit}>
             <Typography
               variant="h3"
@@ -101,7 +101,7 @@ function Login() {
               fullWidth
             />
             <Box marginTop={2} textAlign="center">
-              <Button type="submit" variant="contained" color="primary">
+              <Button type="submit" variant="contained" className="butlogar">
                 Logar
               </Button>
             </Box>
@@ -112,12 +112,12 @@ function Login() {
                 Não tem uma conta?
               </Typography>
             </Box>
-            <Link to="/cadastrousuario">
+            <Link to="/cadastrousuario" className="text-decorator-none">
               <Typography
                 variant="subtitle1"
                 gutterBottom
                 align="center"
-                className="textos1"
+                className="textos1 text-decorator-none"
               >
                 Cadastre-se
               </Typography>
@@ -125,10 +125,6 @@ function Login() {
           </Box>
         </Box>
       </Grid>
-      <Grid
-        xs={6}
-        className='imagem'
-      ></Grid>
     </Grid>
   );
 }

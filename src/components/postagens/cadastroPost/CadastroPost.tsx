@@ -23,7 +23,7 @@ function CadastroPost() {
   const [postagem, setPostagem] = useState<Postagem>({
     id: 0,
     titulo: '',
-    texto: '',
+    conteudo: '',
     tema: null,
     usuario: null,
   });
@@ -154,11 +154,11 @@ function CadastroPost() {
           />
 
           <TextField
-            value={postagem.texto}
+            value={postagem.conteudo}
             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)}
-            id="texto"
+            id="conteudo"
             label="texto"
-            name="texto"
+            name="conteudo"
             variant="outlined"
             margin="normal"
             fullWidth
