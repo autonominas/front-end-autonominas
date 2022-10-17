@@ -25,6 +25,7 @@ function CadastroPost() {
     titulo: '',
     conteudo: '',
     tema: null,
+    usuario: null,
   });
 
   useEffect(() => {
