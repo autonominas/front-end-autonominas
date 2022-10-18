@@ -16,6 +16,7 @@ import { Provider } from "react-redux";
 import store from "./store/store";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Educativa from "./components/educativa/Educativa";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/formulariotema/:id" element={<CadastroTema />} />
           <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
           <Route path="/deletarTema/:id" element={<DeletarTema />} />
+          <Route path="/educativa" element={<Educativa />} />
         </Routes>
         <Footer />
       </BrowserRouter>
