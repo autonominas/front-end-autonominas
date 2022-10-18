@@ -5,6 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Postagem from '../../../models/Postagem';
 import Tema from '../../../models/Tema';
+import User from '../../../models/User';
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 
@@ -14,6 +15,9 @@ function CadastroPost() {
   const [temas, setTemas] = useState<Tema[]>([]);
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
+  );
+  const userId = useSelector<TokenState, TokenState["id"]>(
+    (state) => state.id
   );
   const [tema, setTema] = useState<Tema>({
     id: 0,
@@ -27,6 +31,13 @@ function CadastroPost() {
     tema: null,
     usuario: null,
   });
+
+  const [usuario, setUsuario] = useState<User>({
+    id: +userId,
+    nome: '',
+    senha: '',
+    usuario:''
+  })
 
   useEffect(() => {
     if (token === '') {
@@ -48,6 +59,7 @@ function CadastroPost() {
     setPostagem({
       ...postagem,
       tema: tema,
+      usuario: usuario
     });
   }, [tema]);
 
@@ -73,6 +85,7 @@ function CadastroPost() {
       },
     });
   }
+
 
   function updatedPostagem(event: ChangeEvent<HTMLInputElement>) {
     setPostagem({
