@@ -38,6 +38,7 @@ function App() {
           <Route path="/formulariotema/:id" element={<CadastroTema />} />
           <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
           <Route path="/deletarTema/:id" element={<DeletarTema />} />
+          <Route path="/educativa" element={<Educativa />} />
         </Routes>
         <Footer />
       </BrowserRouter>

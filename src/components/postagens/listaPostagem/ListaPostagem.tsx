@@ -18,7 +18,7 @@ function ListaPostagem() {
   );
 
   useEffect(() => {
-    if (token == "") {
+    if (token === "") {
       toast.error("Você precisa estar logado", {
         position: "top-right",
         autoClose: 2000,
@@ -41,6 +41,8 @@ function ListaPostagem() {
       }
     })
   }
+
+  const userId = useSelector<TokenState, TokenState['id']>((state) => state.id);
 
   useEffect(() => {
 
@@ -67,30 +69,37 @@ function ListaPostagem() {
                 <Typography variant="body2" component="p">
                   {post.tema?.tipo}
                 </Typography>
+                <Typography variant="body2" component="p">
+                Postado por: {post.usuario?.nome}
+              </Typography>
               </CardContent>
               <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5}>
 
-                  <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                    <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                        atualizar
-                      </Button>
-                    </Box>
-                  </Link>
-                  <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
-                        deletar
-                      </Button>
-                    </Box>
-                  </Link>
-                </Box>
+                {post.usuario?.id === +userId?(
+                    <Box display="flex" justifyContent="center" mb={1.5}>
+
+                    <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                      <Box mx={1}>
+                        <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                          atualizar
+                        </Button>
+                      </Box>
+                    </Link>
+                    <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+                      <Box mx={1}>
+                        <Button variant="contained" size='small' color="secondary">
+                          deletar
+                        </Button>
+                      </Box>
+                    </Link>
+                  </Box>
+                ): (<></>)}
+                
               </CardActions>
             </Card>
           </Box>
-        ))
-      }
+        
+    ))}
     </>
   )
 }
