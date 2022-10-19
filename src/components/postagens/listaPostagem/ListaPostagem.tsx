@@ -93,23 +93,7 @@ function ListaPostagem() {
                       </Box>
                     </Link>
                   </Box>
-                ): (
-                  <Box display="flex" justifyContent="center" mb={1.5}>
-                  
-                    <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" disabled >
-                        atualizar
-                      </Button>
-                    </Box>
-                  
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary" disabled>
-                        deletar
-                      </Button>
-                    </Box>
-                  
-                </Box>
-                )}
+                ): (<></>)}
                 
               </CardActions>
             </Card>
