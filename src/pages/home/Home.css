@@ -33,3 +33,9 @@
 .fundo {
     background-color: pink;
 }
+
+@media screen and (max-width: 850) {
+    .fundo{
+        background-color: red;
+    }
+}
