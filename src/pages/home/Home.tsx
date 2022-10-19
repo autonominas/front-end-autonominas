@@ -49,6 +49,7 @@ function Home() {
                             <Button type="submit" variant="contained" color="primary">Ver Postagens</Button>
                         </Link>
                     </Box>
+                    
                 </Grid>
                 <Grid item xs={6} className="imagem1">
                 </Grid>
