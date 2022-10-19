@@ -17,6 +17,7 @@ import store from "./store/store";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Apresentacao from "./pages/apresentacao/Apresentacao";
+import Educativa from "./components/educativa/Educativa";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
           <Route path="/deletarTema/:id" element={<DeletarTema />} />
           <Route path="/educativa" element={<Educativa />} />
+          <Route path="/apresentacao" element={<Apresentacao/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
