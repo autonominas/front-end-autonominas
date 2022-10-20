@@ -22,16 +22,24 @@ function Apresentacao() {
                 <span>Quem Somos?</span>
             </div>
             <div className="text-section">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam possimus maiores earum in accusantium 
-                    aperiam quasi velit, fugiat iusto cum, doloremque beatae reiciendis quae, natus sequi placeat amet facilis corporis.</p>
+                <p>Autonominas é um projeto que nasce da junção de duas palavras: autonomia + minas. 
+                    Tem como propósito empoderar meninas e mulheres brasileiras através do compartilhamento de conhecimentos e experiências, 
+                    além da criação de uma rede de apoio fundamentada no respeito e na sororidade.</p>
             </div>
             <div className="title-section">
                 <span>Nossa Causa?</span>
             </div>
             <div className="text-section">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam 
-                    velit eum earum sed similique ipsum eius quia ab minus deserunt, quos optio assumenda magni 
-                    ea aperiam ad totam non. Quisquam!</p>
+                <p>
+                    Descontrução de paradigmas sociais prejudiciais às mulheres. O empoderamento
+                    femino e autonomia impactam na qualidade de vida da mulher na sociedade (desde
+                    o trabalho, até mesmo à vida).
+                    O motivo principal para promover a equidade de gênero é a garantia do direito
+                    fundamental humano à ter emprego, renda justa e tratamento igualitário na
+                    sociedade. A partir desse ponto, é importante descontruir e desmistificar a ideia de
+                    que masculinidade pressupõe capacidade, competência, autoridade, superioridade
+                    e direito ao poder.
+                </p>
             </div>
         </div>
         <div className="container-colabs">
@@ -69,13 +77,13 @@ function Apresentacao() {
                         <span>Gustavo</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/gustavo-macedo-de-lima/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/GustavoMLima9393" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -88,16 +96,16 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Larissa Nogueira</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev back-end</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/nogueirarissa/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/nogueirarissahttps://github.com/nogueirarissa" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -110,16 +118,16 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Isabela</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/isabella-brandao" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/bellabrandoni" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -132,16 +140,16 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Eduardo</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/eduardo-cordeiro-dos-santos-31a4291a1/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/Edusan17" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -154,16 +162,17 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Larissa Rodrigues</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
-                        <div className="rede linkedin"></div>
+                    <a href="http://www.linkedin.com/in/larissa-rodrigues-b44869181" target="_blank">
+                        <div className="rede linkedin">
+                        </div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/LarissaRodrigues99" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -173,7 +182,7 @@ function Apresentacao() {
         </div>
 
     </div>
-  )
+    )
 }
 
 export default Apresentacao
