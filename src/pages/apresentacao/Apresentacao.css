@@ -7,7 +7,8 @@
     position: absolute;
     top: 15px;
     left: 35px;
-    background-image: url(../../img/ideia_logo_autonominas.png);
+    background-color: #FFF;
+    background-image: url(../../img/Logo_3.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,15 +55,15 @@
     justify-content: center;
     background-image: url(../../img/banner-projetos.jpeg);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 .banner-logo{
     height: 200px;
     width: 200px;
     border-radius: 100px;
-    background-image: url(../../img/ideia_logo_autonominas.png);
+    background-color: #FFF;
+    background-image: url(../../img/Logo_3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
