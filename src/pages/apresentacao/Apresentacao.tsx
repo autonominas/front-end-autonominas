@@ -77,7 +77,7 @@ function Apresentacao() {
                         <span>Gustavo</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
                     <a href="#" target="_blank">
@@ -96,10 +96,10 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Larissa Nogueira</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
                     <a href="#" target="_blank">
@@ -118,10 +118,10 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Isabela</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
                     <a href="#" target="_blank">
@@ -140,10 +140,10 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Eduardo</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
                     <a href="#" target="_blank">
@@ -162,10 +162,10 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Larissa Rodrigues</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
                     <a href="#" target="_blank">
