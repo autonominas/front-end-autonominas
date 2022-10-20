@@ -69,13 +69,13 @@ function Apresentacao() {
                         <span>Gustavo</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Full stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/gustavo-macedo-de-lima/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/gustavomlima9393" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -88,16 +88,16 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Larissa Nogueira</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Dev Backend</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/nogueirarissa/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/nogueirarissa" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -110,16 +110,16 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Isabella Brandão</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Full stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/isabella-brandao/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/bellabrandoni" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -132,16 +132,16 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Eduardo</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Full stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/eduardo-cordeiro-dos-santos-31a4291a1/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/Edusan17" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -154,16 +154,16 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Larissa Rodrigues</span>
                     </div>
                     <div className="infos-area">
-                        <span>Dev Front-end</span>
+                        <span>Full stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/larissa-rodrigues-b44869181/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/LarissaRodrigues99/" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
