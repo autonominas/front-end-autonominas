@@ -37,58 +37,39 @@ function Navbar() {
     var navbarComponent;
 
     if (token !== "") {
-        navbarComponent = <AppBar position="static" style={{ backgroundColor: '#0a0124' }}>
-            <Toolbar variant="dense">
+        navbarComponent = <AppBar className="header">
+            <Toolbar variant="dense" className="toolbar">
+                <Link to="/apresentacao" style={{textDecoration: 'none'}}>
                 <Box className="cursor">
+                    <div className="container-logo"></div>
                     <Typography variant="h5" color="inherit">
                         Autonominas
                     </Typography>
                 </Box>
-
-                <Box display="flex" justifyContent="start">
-                    <Link to="/home" className="text-decorator-none">
-                        <Box mx={2} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Home
-                            </Typography>
-                        </Box>
+                </Link>
+                <Box className="navegate">
+                    
+                    <Link to="/feed" className="text-decorator-none navs">
+                        <div className="container-navs">
+                            <span>Feed</span>
+                        </div>
                     </Link>
-                    <Link to="/apresentacao" className="text-decorator-none">
-                        <Box mx={2} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Apresentacao
-                            </Typography>
-                        </Box>
+                    <Link to="/temas" className="text-decorator-none navs">
+                        <div className="container-navs">
+                            <span>Temas</span>
+                        </div>
                     </Link>
-                    <Link to="/posts" className="text-decorator-none">
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Postagens
-                            </Typography>
-                        </Box>
+                    <Link to="/formulariotema" className="text-decorator-none navs">
+                        <div className="container-navs">
+                            <span>CadTema</span>
+                        </div>
                     </Link>
-                    <Link to="/temas" className="text-decorator-none">
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Temas
-                            </Typography>
-                        </Box>
+                    <Link to="/educativa" className="text-decorator-none navs">
+                        <div className="container-navs">
+                            <span>Videos</span>
+                        </div>
                     </Link>
-                    <Link to="/formulariotema" className="text-decorator-none">
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Cadastrar Tema
-                            </Typography>
-                        </Box>
-                    </Link>
-                    <Link to="/educativa" className="text-decorator-none">
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Educativa
-                            </Typography>
-                        </Box>
-                    </Link>
-                    <Box mx={1} className="cursor" onClick={goLogout}>
+                    <Box mx={1} className="cursor navs" onClick={goLogout}>
                         <Typography variant="h6" color="inherit">
                             Logout
                         </Typography>

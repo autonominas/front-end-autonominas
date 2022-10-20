@@ -1,0 +1,63 @@
+.container-feed{
+    background-image: url(../../img/banner-projetos.jpeg);
+    background-position: center;
+    padding: 45px 0px;
+    position: relative;
+}
+
+.cad-post{
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 35px 0px;
+    padding-top: 85px;
+    
+}
+.container-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    height: 350px;
+    padding: 25px;
+    background-color: rgb(238, 239, 240);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+}
+
+.card-infos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.usuario-nome{
+    font-size: 1.7em!important;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.postagem-tema{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.container-text{
+    width: 100%;
+    height: auto;
+}
+.post-titulo{
+    text-align: start;   
+}
+.post-conteudo{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 200px;
+}

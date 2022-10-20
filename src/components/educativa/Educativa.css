@@ -1,0 +1,42 @@
+.container-educativa{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title-educativa{
+    text-align: center;
+    font-size: 2em;
+    max-width: 50%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-card-direita{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 45px 0px;
+    padding: 25px 0px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.card-info{
+    width: 40%;
+
+}
+.container-card-esquerda{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 45px 0px;
+    padding: 25px 0px;
+    width: 90%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}

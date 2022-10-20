@@ -1,10 +1,14 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './Apresentacao.css';
 function Apresentacao() {
     return (
     <div className='container-apresentacao'>
         <div className='apresentacao-header'>
-            <a href="#">Venha Conhecer!</a>
+            <div className="img-logo"></div>
+            <Link to="/login" className="text-decorator-none">
+                <span>Venha Conhecer!</span>
+            </Link>
         </div>
         <div className="apresentacao-banner">
             <div className="banner-logo">
@@ -40,16 +44,16 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Pedro</span>
+                        <span>Pedro Trudes</span>
                     </div>
                     <div className="infos-area">
                         <span>Dev Front-end</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/pedrotrudes/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/PedroTrudes" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -58,7 +62,29 @@ function Apresentacao() {
             <div className="card-colabs">
                 <div className="colabs-fundo1">
                 </div>
-                <div className="colabs-img1">
+                <div className="colabs-img2">
+                </div>
+                <div className="colabs-infos">
+                    <div className="infos-nome">
+                        <span>Gustavo</span>
+                    </div>
+                    <div className="infos-area">
+                        <span>Dev Front-end</span>
+                    </div>
+                    <div className="infos-redes">
+                    <a href="#" target="_blank">
+                        <div className="rede linkedin"></div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <div className="rede git"></div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div className="card-colabs">
+                <div className="colabs-fundo1">
+                </div>
+                <div className="colabs-img3">
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
@@ -68,10 +94,10 @@ function Apresentacao() {
                         <span>Dev Front-end</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -80,7 +106,7 @@ function Apresentacao() {
             <div className="card-colabs">
                 <div className="colabs-fundo1">
                 </div>
-                <div className="colabs-img1">
+                <div className="colabs-img4">
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
@@ -90,10 +116,10 @@ function Apresentacao() {
                         <span>Dev Front-end</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -102,7 +128,7 @@ function Apresentacao() {
             <div className="card-colabs">
                 <div className="colabs-fundo1">
                 </div>
-                <div className="colabs-img1">
+                <div className="colabs-img5">
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
@@ -112,15 +138,37 @@ function Apresentacao() {
                         <span>Dev Front-end</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
                 </div>
-            </div>
+            </div>    
+            <div className="card-colabs">
+                <div className="colabs-fundo1">
+                </div>
+                <div className="colabs-img6">
+                </div>
+                <div className="colabs-infos">
+                    <div className="infos-nome">
+                        <span>Pedro</span>
+                    </div>
+                    <div className="infos-area">
+                        <span>Dev Front-end</span>
+                    </div>
+                    <div className="infos-redes">
+                    <a href="#" target="_blank">
+                        <div className="rede linkedin"></div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <div className="rede git"></div>
+                    </a>
+                    </div>
+                </div>
+            </div> 
             </div>
         </div>
 

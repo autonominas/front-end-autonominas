@@ -1,23 +1,49 @@
 .container-apresentacao{
-    height: 100vh;
+    height: auto;
     position: relative;
 }
 
+.img-logo{
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    background-image: url(../../img/ideia_logo_autonominas.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    border-radius: 80px;
+}
+
 .apresentacao-header{
-    background-color: blue;
-    height: 100px;
+    background: rgba( 255, 255, 255, 0.35 );
+    backdrop-filter: blur( 13.5px );
+    z-index: 1000;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
     position: fixed;
     top: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
-.apresentacao-header a{
+.apresentacao-header span{
     text-decoration: none;
-    color: #fff;
+    color: #F3AC69;
     margin: 0px 45px;
+    border: 1px solid #F3AC69;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+
+.apresentacao-header span:hover{
+    background-color: #F3AC69!important;
+    color: #fff!important;
 }
 
 .apresentacao-banner{
@@ -26,7 +52,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../../img/fundoBanner.jpeg.png);
+    background-image: url(../../img/banner-projetos.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,7 +76,6 @@
 }
 
 .container-somos{
-    background-color: antiquewhite;
     height: auto;
     display: flex;
     padding: 45px 90px;
@@ -68,7 +93,7 @@
 }
 
 .container-colabs{
-    height: 50vh;
+    height: auto;
     text-align: center;
     padding: 45px;
     display: flex;
@@ -79,16 +104,20 @@
 
 .container-colabs span{
     margin-bottom: 45px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .colabs{
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
 }
 
 .card-colabs{
-    width: 35%;
+    width: 30%;
     margin: 10px;
     height: 400px;
     display: flex;
@@ -98,27 +127,94 @@
     position: relative;
     border-radius: 0px 0px 45px 45px ;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 1s ease-in;
 }
 
+.card-colabs:hover{
+    background-color: #F3AC69;
+    color: #fff;
+}
 .colabs-fundo1{
-    background-image: url(../../img/fundoBanner.jpeg.png);
+    background-image: url(../../img/banner-projetos.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 40%;
 }
-.colabs-img1{
+.colabs-img1 {
     position: absolute;
     top: 100px;
     background-color: #fff;
-    background-image: url(../../img/perfil--01.png);
+    background-image: url(../../img/colabs/perfil--01.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 45px;
-    width: 65px;
-    height: 65px;
+    width: 90px;
+    height: 90px;
+}
+.colabs-img2 {
+    position: absolute;
+    top: 100px;
+    background-color: #fff;
+    background-image: url(../../img/colabs/gustavo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
+}
+.colabs-img3 {
+    position: absolute;
+    top: 100px;
+    background-color: #fff;
+    background-image: url(../../img/colabs/larissa-nogueira.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
+}
+
+.colabs-img4 {
+    position: absolute;
+    top: 100px;
+    background-color: #fff;
+    background-image: url(../../img/colabs/isabela.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
+}
+
+.colabs-img5 {
+    position: absolute;
+    top: 100px;
+    background-color: #fff;
+    background-image: url(../../img/colabs/edu.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
+}
+.colabs-img6 {
+    position: absolute;
+    top: 100px;
+    background-color: #fff;
+    background-image: url(../../img/colabs/lari-santos.jpeg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
 }
 
 .colabs-infos{
@@ -127,13 +223,21 @@
 }
 
 .infos-nome{
-    font-size: 1.1em;
-    font-weight: bold;
-    margin: 35px 0px 15px 0px;
+    margin: 35px 0px 10px 0px;
 }
+
+.infos-nome span{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
 .infos-area{
-    font-size: 1.0em ;
     margin-bottom: 15px;
+}
+
+.infos-area span{
+    font-size: 1.2em;
+    font-weight: 500;
 }
 .infos-redes{
     margin-top: 45px;
@@ -149,8 +253,8 @@
 }
 
 .linkedin{
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     background-image: url(../../img/linkedin.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -158,8 +262,8 @@
 }
 
 .git{
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     background-image: url(../../img/logotipo-do-github.png);
     background-position: center;
     background-repeat: no-repeat;
