@@ -3,14 +3,10 @@ import React from 'react';
 import './Educativa.css';
 
 function Educativa() {
-    return (
-        <>        
-        <div>
-            <div>
-
-                <h1>Videos que irão te ajudar a se destacar no mercado de trabalho</h1>
-                <hr></hr>
-                <div className="App">
+    return (      
+            <div className='container-educativa'>
+                <h2 className='title-educativa'>Videos que irão te ajudar a se destacar no mercado de trabalho</h2>
+                <div className="container">
                     <div className="container-card-direita">
                         <div className='card-info'>
                             <h2>SUPER DICAS para começar no mercado de tecnologia em 2021( Mulheres da T.I )</h2>
@@ -51,7 +47,6 @@ function Educativa() {
                     allowFullScreen></iframe>
                         </div>
                     </div>
-                    <hr></hr>
                         
                     <div className="container-card-direita">
                         <div className='card-info'>
@@ -71,9 +66,6 @@ function Educativa() {
                     allowFullScreen></iframe>
                         </div>
                     </div>
-
-                    <hr></hr>
-                    
                     <div className="container-card-esquerda">
                         <div className='card-info'>
                             <h2>A MULHER NO MERCADO DE TRABALHO | CARGOS E SALÁRIOS</h2>
@@ -99,8 +91,6 @@ function Educativa() {
                             allowFullScreen></iframe>
                         </div>
                     </div>
-
-                    <hr></hr>
                     
                     <div className="container-card-direita">
                         <div className='card-info'>
@@ -124,8 +114,6 @@ function Educativa() {
                         </div>
                     </div>
 
-                    <hr></hr>
-                    
                     <div className="container-card-esquerda">
                         <div className='card-info'>
                             <h2>MAIS 4 Dicas para MULHERES no TRABALHO | PARTE 2</h2>
@@ -148,14 +136,8 @@ function Educativa() {
                         allowFullScreen></iframe>
                         </div>
                     </div>
-                    
                 </div>
-        
             </div>
-        
-        </div>
-
-        </>
     )
 }
 
