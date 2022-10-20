@@ -139,7 +139,7 @@ function CadastroPost() {
         alert('Erro ao cadastrar, verifique os campos');
       }
     }
-    navigate('/posts');
+    navigate('/feed');
   }
 
   return (

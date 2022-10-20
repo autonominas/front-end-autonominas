@@ -4,6 +4,7 @@ import { Button, Box, Modal } from '@mui/material';
 import CloseIcon from '@material-ui/icons/Close';
 import './ModalPostagem.css';
 import CadastroPost from '../cadastroPost/CadastroPost';
+import AddIcon from '@material-ui/icons/Add';
 
 
 
@@ -61,7 +62,9 @@ function ModalPostagem() {
             <Button
                 variant="outlined"
                 className="btnModal"
-                onClick={handleOpen}>Nova Postagem</Button>
+                onClick={handleOpen}>
+                    <AddIcon fontSize='large'></AddIcon>
+            </Button>
             <Modal
                 open={open}
                 onClose={handleClose}

@@ -1,0 +1,10 @@
+.btnModal{
+    background-color: #B26AE6!important;
+    padding: 25px!important;
+    border: none!important;
+    border-radius: 100px!important;
+}
+.btnModal:hover{
+    transition: 1s ease-in;
+    background-color: #f1e9f7!important;
+}

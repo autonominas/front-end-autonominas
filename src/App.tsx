@@ -18,6 +18,7 @@ import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Apresentacao from "./pages/apresentacao/Apresentacao";
 import Educativa from "./components/educativa/Educativa";
+import Feed from "./pages/feed/Feed";
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
         <Routes>
           <Route path="/apresentacao" element={<Apresentacao />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Apresentacao />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/feed" element={<Feed />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
           <Route path="/temas" element={<ListaTema />} />
           <Route path="/posts" element={<ListaPostagem />} />

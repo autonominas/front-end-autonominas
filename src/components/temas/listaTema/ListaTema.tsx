@@ -45,7 +45,7 @@ function ListaTema() {
     getTemas()
   }, [tema.length])
   return (
-    <>
+    <div className="container-temas">
       {
         tema.map(tema => (
           <Box m={2} >
@@ -81,7 +81,7 @@ function ListaTema() {
           </Box>
         ))
       }
-    </>
+    </div>
   );
 }
 
