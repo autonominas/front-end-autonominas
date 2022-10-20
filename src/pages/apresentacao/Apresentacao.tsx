@@ -32,7 +32,7 @@ function Apresentacao() {
             <div className="text-section">
                 <p>
                     Descontrução de paradigmas sociais prejudiciais às mulheres. O empoderamento
-                    femino e autonomia impactam na qualidade de vida da mulher na sociedade (desde
+                    feminino e autonomia impactam na qualidade de vida da mulher na sociedade (desde
                     o trabalho, até mesmo à vida).
                     O motivo principal para promover a equidade de gênero é a garantia do direito
                     fundamental humano à ter emprego, renda justa e tratamento igualitário na
@@ -43,7 +43,7 @@ function Apresentacao() {
             </div>
         </div>
         <div className="container-colabs">
-            <span>Nosso Colaboradores </span>
+            <span>Nossos Colaboradores </span>
             <div className="colabs">
             <div className="card-colabs">
                 <div className="colabs-fundo1">
@@ -80,10 +80,10 @@ function Apresentacao() {
                         <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/gustavo-macedo-de-lima/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/gustavomlima9393" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -102,10 +102,10 @@ function Apresentacao() {
                         <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/nogueirarissa/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/nogueirarissahttps://github.com/nogueirarissa" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -118,16 +118,16 @@ function Apresentacao() {
                 </div>
                 <div className="colabs-infos">
                     <div className="infos-nome">
-                        <span>Isabela</span>
+                        <span>Isabella</span>
                     </div>
                     <div className="infos-area">
                         <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/isabella-brandao/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/bellabrandoni" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -146,10 +146,10 @@ function Apresentacao() {
                         <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/eduardo-cordeiro-dos-santos-31a4291a1/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/Edusan17" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
@@ -168,10 +168,10 @@ function Apresentacao() {
                         <span>Dev Full-stack</span>
                     </div>
                     <div className="infos-redes">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/larissa-rodrigues-b44869181/" target="_blank">
                         <div className="rede linkedin"></div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/LarissaRodrigues99" target="_blank">
                         <div className="rede git"></div>
                     </a>
                     </div>
