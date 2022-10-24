@@ -50,9 +50,7 @@ function Feed() {
 
   return (
     <div className="container-feed">
-      <div className="cad-post">
-        <ModalPostagem></ModalPostagem>
-      </div>
+      
       {
         posts.map(post => (
         <div className="card">
@@ -66,7 +64,9 @@ function Feed() {
                 <p className="post-conteudo">{post.conteudo}</p>
             </div>
           </div>
+         
         </div>
+        
     ))}
     </div>
   )

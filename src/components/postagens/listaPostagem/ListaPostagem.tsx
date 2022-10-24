@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import ModalPostagem from '../modalPostagem/ModalPostagem';
 
 function ListaPostagem() {
   let navigate = useNavigate();
@@ -51,29 +52,42 @@ function ListaPostagem() {
   }, [posts.length])
 
   return (
-    <>
+    <div className='container-lista'>
+      <div className="modal">
+        <ModalPostagem></ModalPostagem>
+      </div>
       {
         posts.map(post => (
-          <Box m={2} >
+          <Box className='container-box'>
             <Card variant="outlined">
-              <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  Postagens
-                </Typography>
-                <Typography variant="h5" component="h2">
-                  {post.titulo}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  {post.conteudo}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  {post.tema?.tipo}
-                </Typography>
-                <Typography variant="body2" component="p">
-                Postado por: {post.usuario?.nome}
-              </Typography>
+              <CardContent className='card-container'>
+                <div className="infos-post">
+                  <Typography color="textSecondary" gutterBottom>
+                    Postagens
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    {post.tema?.tipo}
+                  </Typography>
+                  
+                </div>
+                <div className="container-conteudos">
+
+                <div className="tema-post">
+                  <Typography variant="h5" component="h2">
+                    {post.titulo}
+                  </Typography>
+                </div>
+                <div className="conteudo-post">
+                  <Typography variant="body2" component="p">
+                    {post.conteudo}
+                  </Typography>
+                  <Typography variant="body2" component="p">
+                    Postado por: {post.usuario?.nome}
+                  </Typography>
+                </div>
+                </div>
               </CardContent>
-              <CardActions>
+              <CardActions className='container-event'>
 
                 {post.usuario?.id === +userId?(
                     <Box display="flex" justifyContent="center" mb={1.5}>
@@ -100,7 +114,7 @@ function ListaPostagem() {
           </Box>
         
     ))}
-    </>
+    </div>
   )
 }
 

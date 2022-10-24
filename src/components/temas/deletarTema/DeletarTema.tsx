@@ -72,7 +72,7 @@ function DeletarTema() {
     }
 
     return (
-        <>
+        <div className="container-deltema">
             <Box m={2}>
                 <Card variant="outlined">
                     <CardContent>
@@ -101,7 +101,7 @@ function DeletarTema() {
                     </CardActions>
                 </Card>
             </Box>
-        </>
+        </div>
     );
 }
 export default DeletarTema;
