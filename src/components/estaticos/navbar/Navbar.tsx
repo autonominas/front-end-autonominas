@@ -69,6 +69,11 @@ function Navbar() {
                             <span>Videos</span>
                         </div>
                     </Link>
+                    <Link to="/posts" className="text-decorator-none navs">
+                        <div className="container-navs">
+                            <span>Posts</span>
+                        </div>
+                    </Link>
                     <Box mx={1} className="cursor navs" onClick={goLogout}>
                         <Typography variant="h6" color="inherit">
                             Logout
