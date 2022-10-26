@@ -71,7 +71,7 @@ function DeletarPostagem() {
         navigate('/posts')
     }
     return (
-        <>
+        <div className='container-deletepost'>
             <Box m={2}>
                 <Card variant="outlined" >
                     <CardContent>
@@ -101,7 +101,7 @@ function DeletarPostagem() {
                     </CardActions>
                 </Card>
             </Box>
-        </>
+        </div>
     );
 }
 export default DeletarPostagem;
