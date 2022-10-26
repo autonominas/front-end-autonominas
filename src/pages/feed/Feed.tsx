@@ -50,24 +50,23 @@ function Feed() {
 
   return (
     <div className="container-feed">
-      
+
       {
         posts.map(post => (
-        <div className="card">
-          <div className="container-card">
-            <div className="card-infos">
+          <div className="card">
+            <div className="container-card">
+              <div className="card-infos">
                 <span className="usuario-nome">{post.usuario?.nome}</span>
                 <span className="postagem-tema">Tema: {post.tema?.tipo}</span>
-            </div>
-            <div className="container-text">
+              </div>
+              <div className="container-text">
                 <h2 className="post-titulo">{post.titulo}</h2>
                 <p className="post-conteudo">{post.conteudo}</p>
+              </div>
             </div>
           </div>
-         
-        </div>
-        
-    ))}
+
+        ))}
     </div>
   )
 }
