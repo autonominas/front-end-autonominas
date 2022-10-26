@@ -17,7 +17,7 @@ import store from "./store/store";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Apresentacao from "./pages/apresentacao/Apresentacao";
-import Educativa from "./components/educativa/Educativa";
+import Educativa from "./pages/educativa/Educativa";
 import Feed from "./pages/feed/Feed";
 
 function App() {

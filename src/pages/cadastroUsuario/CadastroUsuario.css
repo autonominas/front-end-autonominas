@@ -1,5 +1,5 @@
 .imagem2{
-    background-image: url(http://hoganbrasil.com.br/wp-content/uploads/2022/03/imagem-atelie.jpg);
+    background-image: url(../../img/Banner_pag_login.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -21,10 +21,10 @@
 }
 
 .containerForm {
-    padding: 45px 0px;
+    padding: 30px 0px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    background: rgba(255,255,255,0.5);
+    background: #B8E2C8;
 -webkit-backdrop-filter: blur(3px);
 backdrop-filter: blur(3px);
 }

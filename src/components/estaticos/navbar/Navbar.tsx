@@ -42,13 +42,13 @@ function Navbar() {
                 <Link to="/apresentacao" style={{textDecoration: 'none'}}>
                 <Box className="cursor">
                     <div className="container-logo"></div>
-                    <Typography variant="h5" color="inherit">
+                    {/* <Typography variant="h5" color="inherit">
                         Autonominas
-                    </Typography>
+                    </Typography> */}
                 </Box>
                 </Link>
+
                 <Box className="navegate">
-                    
                     <Link to="/feed" className="text-decorator-none navs">
                         <div className="container-navs">
                             <span>Feed</span>
