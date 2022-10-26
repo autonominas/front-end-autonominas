@@ -8,6 +8,7 @@ import Tema from '../../../models/Tema';
 import User from '../../../models/User';
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import './CadastroPost.css'
 
 function CadastroPost() {
   let navigate = useNavigate();
@@ -143,7 +144,7 @@ function CadastroPost() {
   }
 
   return (
-    <>
+    <div className='container-postagem'>
       <Container>
         <form onSubmit={onSubmit}>
           <Typography
@@ -209,7 +210,7 @@ function CadastroPost() {
           </FormControl>
         </form>
       </Container>
-    </>
+    </div>
   );
 }
 
