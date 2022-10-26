@@ -55,7 +55,8 @@
     justify-content: center;
     background-image: url(https://i.imgur.com/8Axk8zn.png);
     background-position: center;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* .banner-logo{
